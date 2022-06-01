@@ -41,7 +41,7 @@ public class IngredientGetTypePositiveTest {
         Ingredient ingredient = new Ingredient(this.actualType,
                 RandomStringUtils.randomAlphabetic(9), randomFloat);
 
-        assertEquals(ingredient.getType(), expectedType);
+        assertEquals(expectedType, ingredient.getType());
     }
 
 }

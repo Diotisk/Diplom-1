@@ -40,7 +40,7 @@ public class IngredientGetNamePositiveTest {
         Ingredient ingredient = new Ingredient(IngredientType.FILLING,
                 this.actualName, randomFloat);
 
-        assertEquals(ingredient.getName(), expectedName);
+        assertEquals(expectedName, ingredient.getName());
     }
 
 }

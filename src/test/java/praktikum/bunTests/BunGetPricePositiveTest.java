@@ -37,7 +37,7 @@ public class BunGetPricePositiveTest {
 
         Bun bun = new Bun(RandomStringUtils.randomAlphabetic(10), this.actualPrice);
 
-        assertEquals(bun.getPrice(), expectedPrice, 0);
+        assertEquals(expectedPrice, bun.getPrice(), 0);
 
     }
 

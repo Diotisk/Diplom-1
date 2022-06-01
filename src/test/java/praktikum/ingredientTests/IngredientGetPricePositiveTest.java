@@ -40,7 +40,7 @@ public class IngredientGetPricePositiveTest {
         Ingredient ingredient = new Ingredient(IngredientType.FILLING,
             RandomStringUtils.randomAlphabetic(9), this.actualPrice);
 
-        assertEquals(ingredient.getPrice(), expectedPrice, 0);
+        assertEquals(expectedPrice, ingredient.getPrice(), 0);
     }
 
 }

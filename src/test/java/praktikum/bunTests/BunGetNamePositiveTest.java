@@ -38,7 +38,7 @@ public class BunGetNamePositiveTest {
 
         Bun bun = new Bun(this.actualName, randomFloat);
 
-        assertEquals(bun.getName(), expectedName);
+        assertEquals(expectedName, bun.getName());
     }
 
 }
