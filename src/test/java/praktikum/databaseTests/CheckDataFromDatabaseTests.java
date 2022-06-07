@@ -1,12 +1,10 @@
+package praktikum.databaseTests;
+
 import org.junit.Test;
 import praktikum.Database;
 import praktikum.data.ExpectedDatabase;
 
-import java.util.Arrays;
-
-import static org.junit.Assert.assertEquals;
-
-public class DatabaseTests {
+public class CheckDataFromDatabaseTests {
 
     @Test
     public void getAvailableBunsTest() {
