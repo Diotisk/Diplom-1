@@ -11,6 +11,8 @@ import praktikum.Burger;
 import praktikum.Ingredient;
 import praktikum.IngredientType;
 
+import java.util.Locale;
+
 import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -26,7 +28,7 @@ public class BurgerGetReceiptTest {
     public void getReceiptTest() {
 
         Mockito.when(bun.getName()).thenReturn("Bulka");
-        Mockito.when(ingredient.getType()).thenReturn(IngredientType.FILLING);
+        Mockito.when(ingredient.getType()).thenReturn(IngredientType.FILLING).toString().toLowerCase(Locale.ROOT);
         Mockito.when(ingredient.getName()).thenReturn("Ingredient");
 
         Burger burger = new Burger();

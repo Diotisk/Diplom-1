@@ -4,7 +4,7 @@ import org.junit.Test;
 import praktikum.Database;
 import praktikum.data.ExpectedDatabase;
 
-public class CheckDataFromDatabaseTests {
+public class CheckDataFromDatabaseTest {
 
     @Test
     public void getAvailableBunsTest() {
@@ -17,7 +17,7 @@ public class CheckDataFromDatabaseTests {
     }
 
     @Test
-    public void getAvailableIngredients() {
+    public void getAvailableIngredientsTest() {
 
         Database database = new Database();
         ExpectedDatabase expectedDatabase = new ExpectedDatabase();
